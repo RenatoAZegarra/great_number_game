@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Great Number Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess the Number!</h1>
+      <div class="container1">
+        <div class="incorrect">
+          <p >{{ message }}</p>
+        </div>
+      </div>
+      <form method="POST" action="{{ url_for('guess') }}">
+        <label for="guess">Enter your guess:</label>
+        <input type="number" name="guess" id="guess" min="1" max="100" required>
+        <input type="submit" value="Guess">
+      </form>
+    </div>
+  </body>
+</html>

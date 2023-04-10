@@ -1,0 +1,65 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+  }
+  
+  p {
+    font-size: 1.5em;
+  }
+  
+  form {
+    margin-top: 1em;
+  }
+  
+  input[type=number] {
+    width: 3em;
+    font-size: 1.5em;
+  }
+  
+  input[type=submit] {
+    font-size: 1.5em;
+    margin-left: 1em;
+  }
+  
+  table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.5em;
+    border: 1px solid black;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  .incorrect {
+    background-color: red;
+    width: 50%;
+    height: 100px;
+  }
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}

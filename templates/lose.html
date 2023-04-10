@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Great Number Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sorry, you lost!</h1>
+      <p>You didn't guess the number in time.</p>
+      <a href="{{ url_for('index') }}" class="button">Play Again</a>
+    </div>
+  </body>
+</html>

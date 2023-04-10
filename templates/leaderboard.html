@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Great Number Game Leaderboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Leaderboard</h1>
+        <table>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Attempts</th>
+          </tr>
+          {% for i, result in enumerate(results) %}
+          <tr>
+            <td>{{ i + 1 }}</td>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+        <a href="{{ url_for('index') }}">Play Again</a>
+      </div>
+    </body>
+  </html>
+
